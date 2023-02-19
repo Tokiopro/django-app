@@ -8,5 +8,9 @@
         <h1>HTML を出力してみよう</h1>
         <p>Python の Web アプリケーションフレームワーク Django で
         HTML ファイルを出力してみましょう！</p>
+        <h1>モデルからデータを取り出して表示してみよう</h1>
+        {% for article in object_list %}
+            <p>{{ article.content }}</p>
+        {% endfor %}
     </body>
 </html>
